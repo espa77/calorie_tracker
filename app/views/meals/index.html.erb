@@ -2,6 +2,6 @@
 <%= link_to "Add a new meal", new_meals_path %>
 <ul>
   <% @meals.each do |meal| %>
-    <li><%= meal %></li>
+    <li><%= meal.food %></li>
   <% end %>
 </ul>
