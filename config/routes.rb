@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   get 'sessions/new'
 
   root "home#index"
-  resources :workout, only: [:index, :show, :new, :create]
-  resources :meal, only: [:index, :show, :new, :create]
+  resources :workouts, only: [:index, :show, :new, :create]
+  resources :meals, only: [:index, :show, :new, :create]
   resources :sessions, only: [:new, :create]
   delete 'sessions', to: "sessions#destroy"
   resources :registrations, only: [:new, :create]

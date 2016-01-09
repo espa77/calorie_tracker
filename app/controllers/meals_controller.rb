@@ -1,4 +1,4 @@
-class MealController < ApplicationController
+class MealsController < ApplicationController
   def index
     @meals = Meal.all
   end
@@ -12,7 +12,6 @@ class MealController < ApplicationController
   end
 
   def create
-    binding.pry
     meal = Meal.create(meal_params)
     redirect_to meal
   end

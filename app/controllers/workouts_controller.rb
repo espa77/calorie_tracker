@@ -1,4 +1,4 @@
-class WorkoutController < ApplicationController
+class WorkoutsController < ApplicationController
   def index
     @workouts = Workout.all
   end
@@ -13,7 +13,7 @@ class WorkoutController < ApplicationController
 
   def create
     workout = Workout.create(workout_params)
-    redirect_to workouts
+    redirect_to workout
   end
 
   private

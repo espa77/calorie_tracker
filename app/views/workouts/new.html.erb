@@ -1,0 +1,15 @@
+<h1>Create a new workout</h1>
+<%= form_for @workout do |f| %>
+  <div>
+
+  <%= f.label :activity %>
+  <%= f.text_field :activity %>
+</div>
+  <div>
+  <%= f.label :calories_burned %>
+  <%= f.text_field :calories_burned %>
+</div>
+
+
+<%= f.submit %>
+<% end %>
